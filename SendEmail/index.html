@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("6jibLy1UQHjtUOomf");
+        })();
+    </script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="contact-form">
+            <input type="email" id="email" placeholder="Enter recipient email" required>
+            <!-- <input type="text" name="subject" placeholder="Subject" required> -->
+            <textarea id="message" rows="3" placeholder="Message" required></textarea>
+            <button type="submit" id="btn">Send</button>
+        </form>
+    </div>
+</body>
+</html> 
